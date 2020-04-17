@@ -24,13 +24,11 @@ public class CounterListModel implements CounterListContract.Model {
     return data;
   }
 
-
   @Override
   public void onRestartScreen(String data) {
     // Log.e(TAG, "onRestartScreen()");
     this.data=data;
   }
-
 
   @Override
   public void onDataFromNextScreen(String data) {
@@ -44,9 +42,5 @@ public class CounterListModel implements CounterListContract.Model {
     this.data=data;
   }
 
-  private void addCounter(CounterData item){
-    itemList.add(item);
-
-  }
 
 }

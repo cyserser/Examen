@@ -86,7 +86,7 @@ public class CounterListPresenter implements CounterListContract.Presenter {
 
   @Override
   public void onCounterButtonPressed() {
-    model.
+    
 
   }
 
