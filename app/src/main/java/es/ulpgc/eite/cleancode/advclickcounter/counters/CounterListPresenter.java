@@ -86,8 +86,7 @@ public class CounterListPresenter implements CounterListContract.Presenter {
 
   @Override
   public void onCounterButtonPressed() {
-    CounterToClickState newState = new CounterToClickState();
-
+    model.
 
   }
 

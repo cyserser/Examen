@@ -10,6 +10,7 @@ public class AppMediator extends Application {
 
   private CounterListState counterListState;
   private ClickListState clickListState;
+  private ClickToCounterState clickToCounterState;
 
 
   @Override
@@ -31,13 +32,18 @@ public class AppMediator extends Application {
   public void setNextCounterScreenState(CounterToClickState state) {
 
   }
+  public ClickToCounterState getClickToCounterState() {
+    return clickToCounterState;
+  }
 
   public ClickToCounterState getNextCounterScreenState() {
-    return null;
+    ClickToCounterState state = clickToCounterState;
+    clickToCounterState = null;
+    return state;
   }
 
   public void setPreviousClickScreenState(ClickToCounterState state) {
-
+    this.clickToCounterState = state;
   }
   public CounterToClickState getPreviousClickScreenState() {
     return null;
