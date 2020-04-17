@@ -39,7 +39,6 @@ public class CounterListAdapter extends ArrayAdapter<CounterData> {
     return itemList.get(position);
   }
 
-
   @Override
   public long getItemId(int position) {
     return getItem(position).id;

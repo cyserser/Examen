@@ -4,6 +4,7 @@ import java.lang.ref.WeakReference;
 
 import es.ulpgc.eite.cleancode.advclickcounter.app.ClickToCounterState;
 import es.ulpgc.eite.cleancode.advclickcounter.app.CounterToClickState;
+import es.ulpgc.eite.cleancode.advclickcounter.data.CounterData;
 
 public class CounterListPresenter implements CounterListContract.Presenter {
 
@@ -86,7 +87,7 @@ public class CounterListPresenter implements CounterListContract.Presenter {
   @Override
   public void onCounterButtonPressed() {
     CounterToClickState newState = new CounterToClickState();
-    model.getStoredData();
+
 
   }
 
