@@ -37,7 +37,6 @@ public class AppMediator extends Application {
   public void setPreviousClickScreenState(ClickToCounterState state) {
 
   }
-
   public CounterToClickState getPreviousClickScreenState() {
     return null;
   }

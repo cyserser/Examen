@@ -44,7 +44,6 @@ public class CounterListActivity
   @Override
   public void onBackPressed() {
     super.onBackPressed();
-
     presenter.onBackPressed();
   }
 

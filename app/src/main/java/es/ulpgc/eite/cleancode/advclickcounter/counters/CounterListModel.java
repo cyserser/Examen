@@ -19,6 +19,7 @@ public class CounterListModel implements CounterListContract.Model {
   @Override
   public void onRestartScreen(String data) {
     // Log.e(TAG, "onRestartScreen()");
+    this.data=data;
   }
 
   @Override

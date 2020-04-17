@@ -3,6 +3,7 @@ package es.ulpgc.eite.cleancode.advclickcounter.counters;
 import java.lang.ref.WeakReference;
 
 import es.ulpgc.eite.cleancode.advclickcounter.app.ClickToCounterState;
+import es.ulpgc.eite.cleancode.advclickcounter.app.CounterToClickState;
 
 public class CounterListPresenter implements CounterListContract.Presenter {
 
@@ -68,11 +69,13 @@ public class CounterListPresenter implements CounterListContract.Presenter {
   @Override
   public void onBackPressed() {
     // Log.e(TAG, "onBackPressed()");
+
   }
 
   @Override
   public void onPause() {
     // Log.e(TAG, "onPause()");
+    state.data = model.getStoredData();
   }
 
   @Override
@@ -82,6 +85,9 @@ public class CounterListPresenter implements CounterListContract.Presenter {
 
   @Override
   public void onCounterButtonPressed() {
+    CounterToClickState newState = new CounterToClickState();
+    router.passStateToNextScreen(newState);
+    router.navigateToNextScreen();
 
   }
 
